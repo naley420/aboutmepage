@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        :root {
+            --color-black: #222831;
+            --color-yellow: #F0A500;
+            --color-orange: #CF7500;
+            --color-white: #F4F4F4;
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background-color: var(--color-black)
+        }
+
+        .main {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: 80%;
+            /* background-color: var(--color-grey); */
+        }
+
+        .header {
+            width: 100%;
+            height: 30%;
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            background-image: url(./header.gif);
+            background-size: cover;
+            background-position: center 360px;
+            /* background-color: var(--color-orange); */
+        }
+
+        .content {
+            display: flex;
+            width: 100%;
+            height: 70%;
+            /* background-color: var(--color-white); */
+        }
+
+        .content .left-side {
+            flex: 30%;
+            height: 100%;
+            /* background-color: var(--color-orange); */
+            margin-right: 15px;
+        }
+
+        .content .right-side {
+            flex: 70%;
+            height: 100%;
+            /* background-color: var(--color-orange); */
+            margin-left: 15px;
+        }
+
+        .left-side .tag-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--color-orange);
+            border-radius: 10px;
+            /* background-color: var(--color-yellow); */
+        }
+
+        .tag-container .avatar {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10rem;
+            height: 10rem;
+            outline: 0.2rem solid var(--color-yellow);
+            outline-offset: 0.4rem;
+            border-radius: 50%;
+            background-image: url(./avatar.png);
+            background-size: cover;
+        }
+
+        .tag-container .name {
+            position: absolute;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.4rem;
+            color: var(--color-yellow);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .tag-container .year {
+            position: absolute;
+            top: 75%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.1rem;
+            font-style: italic;
+            color: var(--color-white);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .right-side .info-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            border: 2px solid var(--color-orange);
+            border-radius: 10px;
+            /* background-color: var(--color-yellow); */
+        }
+
+        .info-container .introduction {
+            padding: 1.1rem;
+            flex: 33.33%;
+        }
+
+        .info-container .details {
+            padding: 1.1rem;
+            flex: 33.33%;
+        }
+
+        .info-container .contact {
+            padding: 1.1rem;
+            flex: 33.33%;
+        }
+
+        .info-container .title {
+            font-size: 1.6rem;
+            color: var(--color-yellow);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .info-container .para {
+            text-decoration: none;
+            color: var(--color-white);
+            font-family: 'Nunito', sans-serif;
+            font-size: 1.1rem;
+        }
+
+        .info-container .para a {
+            text-decoration: none;
+            color: var(--color-white);
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .info-container i {
+            font-size: 1.4rem;
+            margin-top: 0.8rem;
+            margin-right: 1rem;
+            outline: 0.15rem solid var(--color-yellow);
+            outline-offset: 0.4rem;
+            border-radius: 50%;
+
+            color: var(--color-white);
+        }
+
+        .info-container i:hover {
+            outline: 0.15rem solid var(--color-white);
+            color: var(--color-yellow);
+        }
+
+        .info-container i:first-child {
+            margin-left: 0.4rem;
+        }
+
+        .details .label, .contact .label {
+            font-style: italic;
+            color: var(--color-yellow);
+        }
+
+
+
+    </style>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="main">
+            <div class="header"></div>
+            <div class="content">
+                <div class="left-side">
+                    <div class="tag-container">
+                        <div class="avatar"></div>
+                        <h1 class="name">DUC LUONG NGOC</h1>
+                        <h3 class="year">Fourth-year</h3>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="info-container">
+                        <div class="introduction">
+                            <h1 class="title">Intro</h1>
+                            <p class="para">Hello. Welcome to my webpage! I am a fourth-year student at Posts and Telecommunications Institute of Technology. I like reading books and playing games. </p>
+                        </div>
+                        <div class="details">
+                            <h1 class="title">Details</h1>
+                            <p class="para"> <span class="label"> Major: </span> Information Security</p>
+                            <p class="para"> <span class="label"> Class: </span> D20CQAT02-B</p>
+                            <p class="para"> <span class="label"> Student ID: </span> B20DCAT042</p>
+                            <p class="para"> <span class="label"> Age: </span> 21</p>
+                            <p class="para"> <span class="label"> Address: </span> Hanoi</p>
+                        </div>
+                        <div class="contact">
+                            <h1 class="title">Contact</h1>
+                            <p class="para"> <span class="label"> Email: </span> <a href="mailto:ducln910.420@gmail.com"> ducln910.420@gmail.com</a> </p>
+                            <a href="https://www.facebook.com/ducln.910.420/"> <i class="fa-brands fa-facebook"></i> </a>
+                            <a href="https://github.com/naley420"> <i class="fa-brands fa-github"></i> </a>
+                            <a href="#"> <i class="fa-brands fa-twitter"></i> </a>
+                            <a href="#"> <i class="fa-brands fa-instagram"></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
